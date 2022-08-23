@@ -3,7 +3,7 @@
  [Fᴏʀᴄᴇ sᴜʙsʀɪʙᴇ Bᴏᴛ](https://t.me/forcesubtgbot)
 > ɢɪvᴇ ᴀ sᴛᴀʀ ʙᴇғᴏʀᴇ ᴋᴀᴍɢɪɴɢ  ғᴜᴍᴋᴇʀ
 
-<p align="center"><a href="https://www.github.com/Noob-Mukesh/ForceSubscribeBot"><img src="https://te.legra.ph/file/fe924e2746ad34b7dc76d.jpg"> width="2000"></a></p>
+<p align="center"><a href="https://www.github.com/Noob-Mukesh/ForceSubscribeBot"><img src="https://te.legra.ph/file/fe924e2746ad34b7dc76d.jpg" width="2000"></a></p>
 
  ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴛᴏ ғᴏʀᴄᴇ sᴜʙsʀɪʙᴇ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴜsᴇʀs ᴛᴏ sᴜʙsʀɪʙᴇ ᴄʜᴀɴɴᴇʟ ᴏʀ ᴄʜᴀᴛ ʙʙ
 
