@@ -48,7 +48,7 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
         await bot.edit_message_text(
             chat_id=chat_id,
             message_id=message_id,
-            text="**Here's How to use me**\n" + Data.HELP,
+            text="**ʜᴇʀᴇ's ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ? **\n" + Data.HELP,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(Data.home_buttons),
         )
@@ -61,7 +61,7 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
         only_owner = await get_only_owner(chat_id)
         creator = True if (await bot.get_chat_member(chat_id, callback_query.from_user.id)).status == "creator" else False
         if only_owner and not creator:
-            await callback_query.answer("Only owner can change settings in this chat.", show_alert=True)
+            await callback_query.answer("ᴏɴʟʏ ᴏᴡɴᴇʀ ᴄᴀɴ ᴄʜᴀɴɢᴇ ᴄʜᴀᴛ sᴇᴛᴛɪɴɢs ɪɴ ᴛʜɪs ᴄʜᴀᴛ ғ**.", show_alert=True)
             return
         if main in ["on", "off"]:
             current_bool = await get_ignore_service(chat_id)
@@ -72,16 +72,16 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
             if current_bool == damn:
                 if current_bool:
                     await toggle_ignore_service(chat_id, False)
-                    await callback_query.answer("Now the service messages will be checked too!", show_alert=True)
+                    await callback_query.answer("ɴᴏᴡ ᴛʜᴇ sᴇʀᴠɪᴄᴇ  ᴍᴇssᴀɢᴇs ᴡɪʟʟ ʙᴇ ᴄʜᴇᴀᴋᴇᴅ ᴛᴏᴏ!", show_alert=True)
                 else:
                     await toggle_ignore_service(chat_id, True)
-                    await callback_query.answer("Now the service messages will not be checked!", show_alert=True)
+                    await callback_query.answer(" ɴᴏᴡ  ᴛʜᴇ sᴇʀᴠɪᴄᴇ ᴍᴇssᴀɢᴇ ᴡɪʟʟ ɴᴏᴛ ʙᴇ ᴄʜᴇᴀᴋᴇᴅ▼", show_alert=True)
             # else:
             #     pass
         elif main in ["true", "false"]:
             creator = True if (await bot.get_chat_member(chat_id, callback_query.from_user.id)).status == "creator" else False
             if not creator:
-                await callback_query.answer("This is a special setting and can only be changed by owner.", show_alert=True)
+                await callback_query.answer("ᴛʜɪs ɪs ᴀ sᴘᴇᴄɪᴀʟ sᴇᴛᴛɪɴɢs ᴀɴᴅ ᴏɴʟʏ ᴏᴡɴᴇʀ ᴄᴀɴ ᴄʜᴀɴɢᴇ ɪᴛ ʙᴀʙʏ.", show_alert=True)
                 return
             current_bool = await get_only_owner(chat_id)
             if main == "true":
@@ -91,14 +91,14 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
             if current_bool == damn:
                 if current_bool:
                     await toggle_only_owner(chat_id, False)
-                    await callback_query.answer("Now admins can change fsub chat and settings!", show_alert=True)
+                    await callback_query.answer("ɴᴏᴡ ᴀᴅᴍɪɴs ᴄᴀɴ  ᴄʜᴀɴɢᴇ ғsᴜʙ ᴄʜᴀᴛ ᴀɴᴅ sᴇᴛᴛɪɴɢs ᴛᴏᴏ¡", show_alert=True)
                 else:
                     await toggle_only_owner(chat_id, True)
-                    await callback_query.answer("Now only owner can change fsub chat and settings!", show_alert=True)
+                    await callback_query.answer("ɴᴏᴡ ᴏɴʟʏ ᴏᴡɴᴇʀ ᴄᴀɴ  ᴄʜᴀɴɢᴇ ғsᴜʙ ᴄʜᴀᴛ ᴀɴᴅ sᴇᴛᴛɪɴɢs!", show_alert=True)
         else:
             current_action = await get_action(chat_id)
             if main == current_action:
-                await callback_query.answer(f"{main.capitalize()} is already the action type.", show_alert=True)
+                await callback_query.answer(f"{main.capitalize()} ɪs ᴀʟʀᴇᴀᴅʏ ᴛʜᴇ ᴀᴄᴛɪᴏɴ ᴛʏᴘᴇ.", show_alert=True)
                 return
             else:
                 await change_action(chat_id, main)
@@ -118,21 +118,21 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
         chat = await bot.get_chat(force_chat)
         mention = '@'+chat.username if chat.username else 'the chat'
         if bot_chat_member.status != "administrator":
-            await callback_query.answer("I've been demoted from this chat. I can't unmute you now. Sorry!", show_alert=True)
+            await callback_query.answer(" ɪ 'ᴠᴇ ʙᴇᴇɴ ᴅᴇᴍᴏᴛᴇᴅ ғʀᴏᴍ  ᴛʜɪs ᴄʜᴀᴛ. I ᴄᴀɴ'ᴛ ᴜɴᴍᴜᴛᴇ ʏᴏᴜ ɴᴏᴡ. Sᴏʀʀʏ ʙᴀʙʏ ʟᴇᴀᴠɪɴɢ ᴄʜᴀᴛ", show_alert=True)
             await bot.send_message(chat_id, "I've been demoted here. Of no use then!")
             return
         if bot_chat_member2.status != "administrator":
-            await callback_query.answer("I've been demoted from the force subscribe chat.", show_alert=True)
-            await bot.send_message(chat_id, "I've been demoted from the force subscribe chat. Of no use then!")
+            await callback_query.answer(" ɪ'ᴠᴇ ʙᴇᴇɴ ᴅᴇᴍᴏᴛᴇᴅ ғʀᴏᴍ ғᴏʀᴄᴇ sᴜʙsʀɪʙᴇ ᴄʜᴀᴛ.", show_alert=True)
+            await bot.send_message(chat_id, "ɪ'ᴠᴇ ʙᴇᴇɴ ᴅᴇᴍᴏᴛᴇᴅ ғʀᴏᴍ ᴛʜᴇ sᴜʙsʀɪʙᴇ ᴄʜᴀᴛ. Oғ ɴᴏ ᴜsᴇ ᴄʜᴀᴛ. F** ʟᴇᴀᴠɪɴɢ ᴄʜᴀᴛ!")
             return
         not_joined = f"Join {mention} first then try!"
         try:
             if user_id == muted_user_id:
                 await bot.get_chat_member(force_chat, user_id)
                 await bot.unban_chat_member(chat_id, user_id)
-                await callback_query.answer("Good Kid. You can start chatting properly in group now.", show_alert=True)
+                await callback_query.answer("ɢᴏᴏᴅ ʙᴀʙʏ . Nᴏᴡ ʏᴏᴜ ᴄᴀɴ sᴛᴀʀᴛ ᴄʜᴀᴛᴛɪɴɢ ᴘʀᴏᴘᴇʀʟʏ ɪɴ ɢʀᴏᴜᴘ ɴᴏᴡ. Tʜɴᴋs ғᴏʀ ᴊᴏɪɴɪɴɢ.", show_alert=True)
                 await callback_query.message.delete()
             else:
-                await callback_query.answer('This message is not for you!', show_alert=True)
+                await callback_query.answer(' ᴡʜʏ ғ*** ɪғ ᴜ ᴄᴀɴ ᴄʜᴀᴛ ᴘʀᴏᴘᴇʀʟʏ ғᴜᴍᴋᴇʀ ɢɪᴠᴇ ᴜʀ ɢғ ɴᴏ ᴛᴏ @itz_mst_boi', show_alert=True)
         except UserNotParticipant:
             await callback_query.answer(not_joined, show_alert=True)
