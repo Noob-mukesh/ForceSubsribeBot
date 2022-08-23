@@ -25,37 +25,31 @@ By @mr_sukkun
         [InlineKeyboardButton("✨ ʙᴏᴛ sᴛᴀᴛᴜs ᴀɴᴅ ᴍᴏʀᴇ✨", url="https://t.me/mukeshbotzone/24")],
         [
             InlineKeyboardButton("ʜᴏᴡ ᴛᴏ ᴜsᴇ?", callback_data="help"),
-            InlineKeyboardButton("🎪 ᴀʙᴏᴜᴛ 🎪", callback_data="about")
+            InlineKeyboardButton("🎪 ᴀʙᴏᴜᴛ ᴍᴇ", callback_data="about")
         ],
-        [InlineKeyboardButton("♥ᴀʙᴏᴜᴛ ᴍᴇ♥", url="https://t.me/mr_sukkun")],
-        [InlineKeyboardButton("🎨sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🎨", url="https://t.me/the_support_chat")],
+        [InlineKeyboardButton("➕ᴀᴅᴅ ɢʀᴏᴜᴘ ᴄᴏɴᴛʀᴏʟʟᴇʀ ʙᴏᴛ ➕", url="https://t.me/groupcontrollertgbot?startgroup=true")],
+        [InlineKeyboardButton("★ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ★", url="https://t.me/the_support_chat")],
     ]
 
     # Help Message
     HELP = """
-1) Add me as **Admin** to a group.
+𝟷) ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ᴀ ɢʀᴏᴜᴘ. 
+𝟸) ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴛʜᴇ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴄʜᴀᴛ ᴀs ᴀᴅᴍɪɴ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ғᴏʀᴄᴇ ʏᴏᴜʀ ᴜsᴇʀs ᴛᴏ ᴊᴏɪɴ. ɪᴛ ᴄᴀɴ ʙᴇ ᴀɴʏ ɢʀᴏᴜᴘ ᴏʀ ᴄʜᴀɴɴᴇʟ, ᴘᴜʙʟɪᴄ ᴏʀ ᴘʀɪᴠᴀᴛᴇ. 
+𝟹) ᴜsᴇ /fsub chat_id /username ᴛᴏ ᴍᴀᴋᴇ ᴍᴇ ғᴜɴᴄᴛɪᴏɴᴀʟ. ᴜsᴇ /id ɪғ ʏᴏᴜ ɴᴇᴇᴅ ᴄʜᴀᴛ ɪᴅ.
+ ᴇxᴀᴍᴘʟᴇ : /fsub -𝟷𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶 ᴏʀ /forcesubsribe -𝟷𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶𝟶 
+𝟺) [ᴏᴘᴛɪᴏɴᴀʟ] ᴜsᴇ /settings ᴛᴏ ᴄʜᴀɴɢᴇ sᴇᴛᴛɪɴɢs! 
+𝟻) ʏᴏᴜ ᴀʀᴇ ɢᴏᴏᴅ ᴛᴏ ɢᴏ. ʟᴇᴀᴠᴇ ᴛʜᴇ ʀᴇsᴛ ᴛᴏ ᴍᴇ.
 
-2) Add me to the particular chat as **Admin** where you want to force your users to join. It can be any group or channel, public or private.
-
-3) Use /fsub chat_id/username to make me functional. Use /id if you need chat id.
-Example : `/fsub -10000000000` or `/forcesubscribe -1000000000`
-
-4) [Optional] Use /settings to change settings!
-
-5) You are good to go. Leave the rest to me.
-
-✨ **ᴀᴠᴀɪʟᴀʙᴇ ᴄᴍᴅs ʙᴀʙʏ ** ✨
-
-/fsub - See current force subscribe chat
-/fsub chat_id/username - Force users to join the particular chat
-/settings - Change Group Settings
-/id - Get the chat id of any group or channel
-/about - About The Bot
-/help - This Message
-/start - Start the Bot
-
-**Note** - You can also use `/forcesubscribe` instead of `/fsub`
-    """
+ ✨ ᴀᴠᴀɪʟᴀʙᴇ ᴄᴍᴅs ʙᴀʙʏ  ✨ 
+/start -  sᴛᴀʀᴛ ғᴏʀᴄᴇ sᴜʙsʀɪʙᴇ ʙᴏᴛ 
+/fsub - sᴇᴇ ᴄᴜʀʀᴇɴᴛ ғᴏʀᴄᴇ sᴜʙsᴄʀɪʙᴇ ᴄʜᴀᴛ 
+/fsub chat_id/username- ғᴏʀᴄᴇ ᴜsᴇʀs ᴛᴏ ᴊᴏɪɴ ᴛʜᴇ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴄʜᴀᴛ
+/settings - ᴄʜᴀɴɢᴇ ɢʀᴏᴜᴘ sᴇᴛᴛɪɴɢs 
+/id - ɢᴇᴛ ᴛʜᴇ ᴄʜᴀᴛ ɪᴅ ᴏғ ᴀɴʏ ɢʀᴏᴜᴘ ᴏʀ ᴄʜᴀɴɴᴇʟ
+/about - ᴀʙᴏᴜᴛ ᴛʜᴇ ʙᴏᴛ 
+/help - ᴛʜɪs ᴍᴇssᴀɢᴇ 
+☞︎︎︎ ɴᴏᴛᴇ - ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴜsᴇ /forcesubsribe ɪɴsᴛᴇᴀᴅ ᴏғ /fsub
+"""
 
     # About Message
     ABOUT = """
@@ -64,9 +58,11 @@ Example : `/fsub -10000000000` or `/forcesubscribe -1000000000`
 ᴀ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴛᴏ  ғᴏʀᴄᴇ sᴜʙ 
 
 
-ғʀᴀᴍᴇᴡᴏʀᴋ : [Pyrogram](docs.pyrogram.org)
+ғʀᴀᴍᴇᴡᴏʀᴋ : [ᴘʏʀᴏɢʀᴀᴍ](docs.pyrogram.org)
 
-ʟᴀɴɢᴜᴀɢᴇ : [Python](www.python.org)
+ʟᴀɴɢᴜᴀɢᴇ : [ᴘʏᴛʜᴏɴ](www.python.org)
 
 ᴅᴇᴠᴇʟᴏᴘᴇʀ :  @itz_mst_boi
+
+ᴜᴘᴅᴀᴛᴇ   : @mukeshbotzone
     """
