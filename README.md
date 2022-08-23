@@ -50,13 +50,9 @@
 - `DATABASE_URL` - Will be automatically added by Heroku.
 - `MUST_JOIN` - Username/ID of your telegram channel/group.
 
-## Functions
+## ғᴜɴᴄᴛɪᴏɴs
 
-> More features soon if suggested by you :)
-
-## To-Do
-
-> That's on you mainly...
+> ᴍᴏʀᴇ ғᴇᴀᴛᴜʀᴇ sᴏᴏɴ ɪᴅ sᴜɢɢᴇsᴛᴇᴅ ʙʏ ʏᴏᴜ:)
 
 [![ᴘʀs ᴡᴇʟᴄᴏᴍᴇ ](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
