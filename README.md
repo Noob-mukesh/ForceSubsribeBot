@@ -1,24 +1,24 @@
 # ғᴏʀᴄᴇ sᴜʙsʀɪʙᴇ ʙᴏᴛ
 
  [Fᴏʀᴄᴇ sᴜʙsʀɪʙᴇ Bᴏᴛ](https://t.me/forcesubtgbot)
-> ɢɪʙᴇ ᴀ sᴛᴀʀ ʙᴇғᴏʀᴇ ᴋᴀᴍɢɪɴɢ 
+> ɢɪvᴇ ᴀ sᴛᴀʀ ʙᴇғᴏʀᴇ ᴋᴀᴍɢɪɴɢ  ғᴜᴍᴋᴇʀ
 
 <p align="center"><a href="https://www.github.com/Noob-Mukesh/ForceSubscribeBot"><img src="https://telegra.ph/file/317f37f33c0055bfb34d6.jpg" width="2000"></a></p>
 
  ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴛᴏ ғᴏʀᴄᴇ sᴜʙsʀɪʙᴇ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴜsᴇʀs ᴛᴏ sᴜʙsʀɪʙᴇ ᴄʜᴀɴɴᴇʟ ᴏʀ ᴄʜᴀᴛ ʙʙ
 
-[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![ᴏᴘᴇɴ sᴏᴜʀᴄᴇ ʟᴏᴠᴇ sᴠɢ1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-## Usage
+## ᴜsᴀɢᴇ
 
-### Deploy to Heroku
+### ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴜᴋᴏ
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Noob-Mukesh/ForceSubsribeBot)
+[![ᴅᴇᴘʟᴏʏ](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Noob-Mukesh/ForceSubsribeBot)
 
-1. Tap on above button and fill `API_ID`, `API_HASH`, `BOT_TOKEN` (and `MUST_JOIN`).
-2. Then tap "Deploy App" below it. Wait till deploying is complete (will take atmost 2 minutes).
-3. After deploying is complete, tap on "Manage App"
-4. Check the logs to see if your bot is ready!
+1. Tᴀᴘ ᴏɴ ᴀʙᴏᴠᴅ ʙᴜᴛᴛᴏɴ ᴀɴᴅ ғɪʟʟ`API_ID`, `API_HASH`, `BOT_TOKEN` (ᴀɴᴅ `MUST_JOIN`).
+2. Tʜᴇɴ ᴛᴀᴘ ᴏɴ "ᴅᴇᴘʟᴏʏ ᴀᴘᴘ"ʙᴇʟᴏᴡ ɪᴛ ᴡᴀɪᴛ ᴛɪʟʟ ᴅᴇᴘʟᴏʏɪɴɢɪs ᴄᴏᴍᴘʟᴇᴛᴇ(ᴡɪʟʟ ᴛᴀᴋᴇ 1-2 ᴍɪɴᴜᴛᴇs).
+3. Aғᴛᴇʀ ᴅᴇᴘʟᴏʏɪɴɢ ɪs ᴄᴏᴍᴘʟᴇᴛᴇ, ᴛᴀᴘ  ᴏɴ "ᴍᴀɴᴀɢᴇ ᴀᴘᴘ"
+4. ᴄʜᴇᴀᴋ ᴛʜᴇ ʟᴏɢs ᴛᴏ sᴇᴇ ɪғ ʏᴏᴜʀ ʙᴏᴛ ɪs ʀᴇᴀᴅʏ.
 
 ### ʟᴏᴄᴀʟ ᴅᴇᴘʟᴏʏɪɴɢ
 
