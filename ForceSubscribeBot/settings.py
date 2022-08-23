@@ -14,7 +14,7 @@ async def settings(bot: Client, msg):
         await msg.reply("ᴘʟᴇᴀsᴇ ᴀᴅᴅ ᴀ ғᴏʀᴄᴇ sᴜʙsᴄʀɪʙᴇ ᴄʜᴀᴛ  ᴜsɪɴɢ /fsub  ᴛᴏ ᴜsᴇ ᴍᴇ.")
         return
     only_owner = await get_only_owner(chat_id)
-    creator =ᴛʀᴜᴇ ɪғ (await bot.get_chat_member(chat_id, msg.from_user.id)).status == "creator" else False
+    creator =True if (await bot.get_chat_member(chat_id, msg.from_user.id)).status == "creator" else False
     if only_owner and not creator:
         await msg.reply("ᴏɴʟʏ  ᴏᴡɴᴇʀ ᴄᴀɴ  ᴄʜᴀɴɢᴇ sᴇᴛᴛɪɴɢs ɪɴ ᴛʜɪs ᴄʜᴀᴛ")
         return
