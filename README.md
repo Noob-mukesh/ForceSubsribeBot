@@ -1,5 +1,6 @@
 # ғᴏʀᴄᴇ sᴜʙsʀɪʙᴇ ʙᴏᴛ
 
+ [Fᴏʀᴄᴇ sᴜʙsʀɪʙᴇ Bᴏᴛ](https://t.me/forcesubtgbot)
 > ɢɪʙᴇ ᴀ sᴛᴀʀ ʙᴇғᴏʀᴇ ᴋᴀᴍɢɪɴɢ 
 
 <p align="center"><a href="https://www.github.com/Noob-Mukesh/ForceSubscribeBot"><img src="https://telegra.ph/file/317f37f33c0055bfb34d6.jpg" width="2000"></a></p>
@@ -12,36 +13,36 @@
 
 ### Deploy to Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Noob-Mukesh/Forcesub)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Noob-Mukesh/ForceSubsribeBot)
 
 1. Tap on above button and fill `API_ID`, `API_HASH`, `BOT_TOKEN` (and `MUST_JOIN`).
 2. Then tap "Deploy App" below it. Wait till deploying is complete (will take atmost 2 minutes).
 3. After deploying is complete, tap on "Manage App"
 4. Check the logs to see if your bot is ready!
 
-### Local Deploying
+### ʟᴏᴄᴀʟ ᴅᴇᴘʟᴏʏɪɴɢ
 
-1. Clone the repo
+1. Cʟᴏɴᴇ ᴛʜᴇ ʀᴇᴘᴏ
    ```markdown
    git clone https://github.com/Noob-Mukesh/ForceSubscribeBot
    ```
    
-2. Get a DATABASE_URL. If you don't know how, deploy using Heroku Button only or delete database things as it's not a compulsion.
+2. Gᴇᴛ ᴀ DATABASE_URL.  Iғ ʏᴏᴜ ᴅᴏɴᴛ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴅᴇᴘʟᴏʏ .ᴛʜᴇɴ ᴅᴇᴘʟᴏʏ ᴜsɪɴɢ ʜᴇʀᴜᴋᴏ ʙᴜᴛᴛᴏɴᴏɴʟʏ ᴏʀ ᴅᴇʟᴇᴛᴇ ᴅᴀᴛᴀʙᴀsᴇ ᴛʜɪɴɢs ᴀs ɪᴛ's ɴᴏᴛ ᴀ ᴄᴏᴍᴘᴜʟsɪᴏɴ.
    
-3. Edit `Config.py` and fill the needed variables
+3. Eᴅɪᴛ `Config.py` ᴀɴᴅ ғɪʟʟ ᴛʜᴇ ɴᴇᴇᴅᴇᴅ ᴠᴀʀɪᴀʙʟᴇs
 
-4. Enter the directory
+4. Eɴᴛᴇʀ ᴛʜᴇ ᴅɪʀᴇᴄᴛᴏʀʏ
    ```markdown
    cd ForceSubscribeBot
    ```
-5. Run the file
+5. Rᴜɴ ᴛʜᴇ ғɪʟᴇ
    ```markdown
    python3 fsubbot.py
    ```
 
-## Environment Variables
+## ᴇɴᴠɪᴏʀɴᴍᴇɴᴛ ᴠᴀʀɪᴀʙʟᴇs
 
-#### Mandatory Vars
+#### ᴍᴀʙᴅᴀᴛᴏʀʏ ᴠᴀʀs
 
 - `API_ID` - Get this from [my.telegram.org](https://my.telegram.org/auth)
 - `API_HASH` - Get this from [my.telegram.org](https://my.telegram.org/auth)
@@ -57,18 +58,21 @@
 
 > That's on you mainly...
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![ᴘʀs ᴡᴇʟᴄᴏᴍᴇ ](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 ## ᴄʀᴇᴅɪᴛ 
 
  [ᴘɪʀᴏ sᴛᴀʀ](https/t.me/StarkAgent)
+
+[ɴᴏᴏʙ ᴄᴏᴅᴇʀ](https://t.me/itz_mst_boi)
+
 ## sᴜᴘᴘᴏʀᴛ
 
-ᴄʜᴀɴɴᴇʟ :- [@StarkBots](https://t.me/mukeshbotzone)
+ᴄʜᴀɴɴᴇʟ :- [ᴍᴜᴋᴇsʜ ʙᴏᴛ ᴢᴏɴᴇ](https://t.me/mukeshbotzone)
 
-ɢʀᴏᴜᴘ ᴄʜᴀᴛ :- [ᴍᴜᴋᴇsʜ ʙᴏᴛ ᴢᴏɴᴇ](https://t.me/the_support_chat)
+ɢʀᴏᴜᴘ ᴄʜᴀᴛ :- [ᴛʜᴇ sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/the_support_chat)
 
 ## :)
 
-[![ForTheBadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+[![ғᴏʀ ᴛʜᴇʙᴀᴅɢᴇ ᴍᴀᴅᴇ-ᴡɪᴛʜ ᴘʏᴛʜᴏɴ](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
