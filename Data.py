@@ -24,13 +24,13 @@ Bʏ - @mr_sukkun
     buttons = [
         [InlineKeyboardButton("✨ ʙᴏᴛ sᴛᴀᴛᴜs ᴀɴᴅ ᴍᴏʀᴇ✨", url="https://t.me/mukeshbotzone/24")],
         [
-            InlineKeyboardButton("ʜᴏᴡ ᴛᴏ ᴜsᴇ?", callback_data="help"),
+            InlineKeyboardButton("⚡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅ ⚡", callback_data="help"),
             InlineKeyboardButton("🎪 ᴀʙᴏᴜᴛ ᴍᴇ", callback_data="about")
         ],
         [InlineKeyboardButton("➕ᴀᴅᴅ ɢʀᴏᴜᴘ ᴄᴏɴᴛʀᴏʟʟᴇʀ ʙᴏᴛ ➕", url="https://t.me/groupcontrollertgbot?startgroup=true")],
         [InlineKeyboardButton("★ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ★", url="https://t.me/the_support_chat")],
-    ]
-
+        [InlinekeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕ url="https://t.me/forcesubtgbot?startgroup=true")],
+   ]
     # Help Message
     HELP = """
 𝟷) ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ᴀ ɢʀᴏᴜᴘ. 
