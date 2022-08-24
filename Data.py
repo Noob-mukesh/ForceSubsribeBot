@@ -29,7 +29,6 @@ Bʏ - @mr_sukkun
         ],
         [InlineKeyboardButton("➕ᴀᴅᴅ ɢʀᴏᴜᴘ ᴄᴏɴᴛʀᴏʟʟᴇʀ ʙᴏᴛ ➕", url="https://t.me/groupcontrollertgbot?startgroup=true")],
         [InlineKeyboardButton("★ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ★", url="https://t.me/the_support_chat")],
-        [InlinekeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url="https://t.me/forcesubtgbot?startgroup=true")],
       ]
     # Help Message
     HELP = """
