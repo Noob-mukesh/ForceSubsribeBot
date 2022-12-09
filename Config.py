@@ -17,10 +17,10 @@ if ENVIRONMENT:
         MUST_JOIN = MUST_JOIN.replace("@", "mr_sukkun")
 else:
     # Fill the Values
-    API_ID = 0
-    API_HASH = ""
-    BOT_TOKEN = ""
-    DATABASE_URL = ""
+    API_ID = 21308320
+    API_HASH = "28c71b8874710695093bda17858fd430"
+    BOT_TOKEN = "5810438583:AAEi-Yh3J2njSt-WjVuheSJabxaVIC_MPwA"
+    DATABASE_URL = "https://lambent-cuchufli-e180cf.netlify.app/"
     DATABASE_URL = DATABASE_URL.replace("postgres", "postgresql")
     MUST_JOIN = "mukeshbotzone"
     if MUST_JOIN.startswith("@"):
