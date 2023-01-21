@@ -58,9 +58,9 @@
 
 ## ᴄʀᴇᴅɪᴛ 
 
- [ᴘɪʀᴏ sᴛᴀʀ](https/t.me/StarkAgent)
+ 
 
-[ɴᴏᴏʙ ᴄᴏᴅᴇʀ](https://t.me/itz_mst_boi)
+[ɴᴏᴏʙ ᴄᴏᴅᴇʀ](https://t.me/itz_legend_coder)
 
 ## sᴜᴘᴘᴏʀᴛ
 
