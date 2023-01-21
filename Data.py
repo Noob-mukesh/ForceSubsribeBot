@@ -31,10 +31,8 @@ Bʏ - @mr_sukkun
     InlineKeyboardButton("🎪 ᴀʙᴏᴜᴛ ᴍᴇ 🎪", callback_data="about")
     ],
     [
-    [InlineKeyboardButton("➕ᴀᴅᴅ ɢʀᴏᴜᴘ ᴄᴏɴᴛʀᴏʟʟᴇʀ ʙᴏᴛ ➕",
-                          url="https://t.me/groupcontrollertgbot?startgroup=true")],
-    [InlineKeyboardButton(
-        "➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url="https://t.me/forcesubscribe12bot?startgroup=true")],
+    InlineKeyboardButton("➕ᴀᴅᴅ ɢʀᴏᴜᴘ ᴄᴏɴᴛʀᴏʟʟᴇʀ ʙᴏᴛ ➕",url="https://t.me/groupcontrollertgbot?startgroup=true"),
+    InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url="https://t.me/forcesubscribe12bot?startgroup=true")]
     ]
 # Help Message
     HELP = """
