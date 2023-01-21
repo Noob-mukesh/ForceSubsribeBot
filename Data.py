@@ -6,13 +6,14 @@ class Data:
     START = """
 ʜᴇʏ {}
 
-ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {} [🥀](https://te.legra.ph/file/fe924e2746ad34b7dc76d.jpg)
+ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {} 🥀
 
 ɪ ᴄᴀɴ ғᴏʀᴄᴇ  ʏᴏᴜʀ ɢʀᴏᴜᴘs ᴜsᴇʀ ᴛᴏ ᴊᴏɪɴ  ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴄʜᴀᴛ.
  ᴛʜᴇ ᴄʜᴀᴛ ᴄᴀɴ ʙᴇ ᴀ ɢʀᴏᴜᴘ ᴏʀ ᴄʜᴀɴɴᴇʟ ɪᴛ ᴄᴀɴ ᴘʀɪᴠᴀᴛᴇ ᴏʀ ᴘᴜʙʟɪᴄ.
  ᴜsᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ʙᴀʙʏ !
 
-Bʏ - @mr_sukkun
+
+
     """
 
     # Home Button
@@ -24,15 +25,15 @@ Bʏ - @mr_sukkun
     buttons = [
        [InlineKeyboardButton("👨‍💻", url="https://t.me/itz_legend_coder"),
         InlineKeyboardButton("🎪", callback_data="about"),
-        InlineKeyboardButton("🛡", callback_data="help"),
+        InlineKeyboardButton("🛡", url="https://t.me/mastermind_network_official"),
         InlineKeyboardButton("🎉", url="https://t.me/mr_sukkun")],
 [
     InlineKeyboardButton("⚡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅ ⚡", callback_data="help"),
     InlineKeyboardButton("🎪 ᴀʙᴏᴜᴛ ᴍᴇ 🎪", callback_data="about")
     ],
     [
-    InlineKeyboardButton("➕ᴀᴅᴅ ɢʀᴏᴜᴘ ᴄᴏɴᴛʀᴏʟʟᴇʀ ʙᴏᴛ ➕",url="https://t.me/groupcontrollertgbot?startgroup=true"),
-    InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url="https://t.me/forcesubscribe12bot?startgroup=true")]
+    InlineKeyboardButton("➕ᴀᴅᴅ ɢʀᴏᴜᴘ ᴄᴏɴᴛʀᴏʟʟᴇʀ ʙᴏᴛ ➕",url="https://t.me/groupcontrollertgbot?startgroup=true")],
+   [ InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url="https://t.me/forcesubscribe12bot?startgroup=true")]
     ]
 # Help Message
     HELP = """
