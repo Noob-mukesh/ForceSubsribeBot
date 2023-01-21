@@ -28,7 +28,7 @@ Bʏ - @mr_sukkun
             InlineKeyboardButton("🎪 ᴀʙᴏᴜᴛ ᴍᴇ", callback_data="about")
         ],
         [InlineKeyboardButton("➕ᴀᴅᴅ ɢʀᴏᴜᴘ ᴄᴏɴᴛʀᴏʟʟᴇʀ ʙᴏᴛ ➕", url="https://t.me/groupcontrollertgbot?startgroup=true")],
-        [InlineKeyboardButton("★ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ★", url="https://t.me/the_support_chat")],
+        [InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url="https://t.me/forcesubscribe12bot?startgroup=true")],
       ]
     # Help Message
     HELP = """
@@ -61,7 +61,9 @@ Bʏ - @mr_sukkun
 
 ʟᴀɴɢᴜᴀɢᴇ : [ᴘʏᴛʜᴏɴ](www.python.org)
 
-ᴅᴇᴠᴇʟᴏᴘᴇʀ :  @itz_mst_boi
+ᴅᴇᴠᴇʟᴏᴘᴇʀ :  @itz_legend_coder
 
-ᴜᴘᴅᴀᴛᴇ   : @mukeshbotzone
+ᴜᴘᴅᴀᴛᴇ   : @Mr_sukkun
+
+ʀᴇᴘᴏ      :[ғᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏ ](https://github.com/Noob-mukesh/ForceSubsribeBot)
     """
