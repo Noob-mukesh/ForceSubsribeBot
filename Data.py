@@ -22,10 +22,11 @@ Bʏ - @mr_sukkun
 
     # Rest Buttons
     buttons = [
-        [InlineKeyboardButton("👨‍💻", url="https://t.me/itz_legend_coder")],
-        [InlineKeyboardButton("🎪", callback_data="about")],
-        [InlineKeyboardButton("🛡", callback_data="help")],
-        [InlineKeyboardButton("🎉",url="https://t.me/mr_sukkun")],
+        InlineKeyboardButton("👨‍💻", url="https://t.me/itz_legend_coder"),
+        InlineKeyboardButton("🎪", callback_data="about"),
+        InlineKeyboardButton("🛡", callback_data="help"),
+        InlineKeyboardButton("🎉",url="https://t.me/mr_sukkun")
+              ],
          
         
         [
