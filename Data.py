@@ -22,10 +22,13 @@ Bʏ - @mr_sukkun
 
     # Rest Buttons
     buttons = [
-        [InlineKeyboardButton("✨ ʙᴏᴛ sᴛᴀᴛᴜs ᴀɴᴅ ᴍᴏʀᴇ✨", url="https://t.me/mukeshbotzone/24")],
+        [InlineKeyboardButton("👨‍💻", url="https://t.me/itz_legend_coder")],
+        [InlineKeyboardButton("🎪", callback_data="about")],
+         
+        
         [
             InlineKeyboardButton("⚡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅ ⚡", callback_data="help"),
-            InlineKeyboardButton("🎪 ᴀʙᴏᴜᴛ ᴍᴇ", callback_data="about")
+            InlineKeyboardButton("🎪" ᴀʙᴏᴜᴛ ᴍᴇ", callback_data="about")
         ],
         [InlineKeyboardButton("➕ᴀᴅᴅ ɢʀᴏᴜᴘ ᴄᴏɴᴛʀᴏʟʟᴇʀ ʙᴏᴛ ➕", url="https://t.me/groupcontrollertgbot?startgroup=true")],
         [InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url="https://t.me/forcesubscribe12bot?startgroup=true")],
