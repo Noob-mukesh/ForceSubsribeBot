@@ -60,7 +60,7 @@
 
  
 
-[ɴᴏᴏʙ ᴄᴏᴅᴇʀ](https://t.me/itz_legend_coder)
+[ɴᴏᴏʙ ᴄᴏᴅᴇʀ](https://t.me/legend_coder)
 
 ## sᴜᴘᴘᴏʀᴛ
 
