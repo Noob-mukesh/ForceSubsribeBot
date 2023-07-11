@@ -133,6 +133,6 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
                 await callback_query.answer("ɢᴏᴏᴅ ʙᴀʙʏ . Nᴏᴡ ʏᴏᴜ ᴄᴀɴ sᴛᴀʀᴛ ᴄʜᴀᴛᴛɪɴɢ ᴘʀᴏᴘᴇʀʟʏ ɪɴ ɢʀᴏᴜᴘ ɴᴏᴡ. Tʜɴᴋs ғᴏʀ ᴊᴏɪɴɪɴɢ.", show_alert=True)
                 await callback_query.message.delete()
             else:
-                await callback_query.answer(' ᴡʜʏ?? ɪғ ᴜ ᴄᴀɴ ᴄʜᴀᴛ ᴘʀᴏᴘᴇʀʟʏ', show_alert=True)
+                await callback_query.answer('This is not for u', show_alert=True)
         except UserNotParticipant:
             await callback_query.answer(not_joined, show_alert=True)
