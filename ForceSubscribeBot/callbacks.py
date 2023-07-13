@@ -27,10 +27,7 @@ async def _callbacks(bot, callback_query):
         if query == 'home':
             chat_id = callback_query.from_user.id
             message_id = callback_query.message.message_id
-            await bot.edit_message_text(
-                chat_id=chat_id,
-                message_id=message_id,
-                text=Data.START.format(callback_query.from_user.mention, mention),
+            await query.message.edit_text(text=Data.START.format(callback_query.from_user.mention, mention),
                 reply_markup=InlineKeyboardMarkup(Data.buttons)
             )
     elif query == "about":
