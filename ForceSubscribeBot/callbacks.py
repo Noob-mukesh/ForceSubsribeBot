@@ -18,7 +18,7 @@ from ForceSubscribeBot.settings import action_markup
 # Callbacks
 
 @Client.on_callback_query()
-async def _callbacks(bot, callback_query):
+async def _callbacks(bot, query:callback_query):
     user = await bot.get_me()
     user_id = callback_query.from_user.id
     mention = user.mention
