@@ -8,6 +8,7 @@ from pyrogram.enums import ChatMemberStatus
 from pyrogram.types import ChatPermissions
 @Client.on_message(filters.group, group=-1)
 async def main(bot: Client, msg: Message):
+    await msg.delete()
     if not msg.from_user:
         return
     user_id = msg.from_user.id
@@ -36,12 +37,12 @@ async def main(bot: Client, msg: Message):
                     await bot.ban_chat_member(chat_id, user_id)
                     await bot.unban_chat_member(chat_id, user_id)
                     await msg.reply("ᴋɪᴄᴋᴇᴅ ᴍᴇᴍʙᴇʀ ʙᴇᴄᴀᴜsᴇ  ɴᴏᴛ  ᴊᴏɪɴᴇᴅ ғᴏʀᴄᴇ sᴜʙsʀɪʙᴇ ᴄʜᴀᴛ")
-                    await msg.delete()
+                    
                     return
                 elif action == 'ban':
                     await bot.ban_chat_member(chat_id, user_id, datetime.now() + timedelta(days=1))
                     await msg.reply("ʙᴀɴɴᴇᴅ ᴍᴇᴍʙᴇʀ ʙᴇᴄᴀᴜsᴇ  ɴᴏᴛ  ᴊᴏɪɴᴇᴅ ғᴏʀᴄᴇ sᴜʙsʀɪʙᴇ ᴄʜᴀᴛ")
-                    await msg.delete()
+                    
                     return
                 buttons = [[InlineKeyboardButton("✨ sᴜʙsᴄʀɪʙᴇ  ᴍʏ ᴄʜᴀɴɴᴇʟ  ✨", url=link)]]
                 if action == 'mute':
@@ -52,7 +53,7 @@ async def main(bot: Client, msg: Message):
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
-                await msg.delete()
+                
                 await msg.stop_propagation()
             except ChatWriteForbidden:
                 pass
