@@ -29,4 +29,4 @@ else:
     if MUST_JOIN.startswith("@"):
         MUST_JOIN = MUST_JOIN[1:]
 
-DEVS = [2145093972]
+DEVS = [5935608297]
