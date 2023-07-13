@@ -38,7 +38,7 @@ async def main(bot: Client, msg: Message):
                     await msg.reply("ᴋɪᴄᴋᴇᴅ ᴍᴇᴍʙᴇʀ ʙᴇᴄᴀᴜsᴇ  ɴᴏᴛ  ᴊᴏɪɴᴇᴅ ғᴏʀᴄᴇ sᴜʙsʀɪʙᴇ ᴄʜᴀᴛ")  
                     await msg.delete()
                     return
-               elif action == 'warn':
+                elif action == 'warn':
                     await msg.reply(f"ʜᴇʏ ᴅᴇᴀʀ  {msg.from_user.mention},\n\nʏᴏᴜ ᴍᴜsᴛ ʜᴀᴠᴇ ᴛᴏ ᴊᴏɪɴ {mention} ᴛᴏ ᴄʜᴀᴛ ʜᴇʀᴇ ᴛʜᴇɴ ᴘʀᴇss ᴏɴ ᴜɴᴍᴜᴛᴇ ʙᴜᴛᴛᴏɴ.",
                     disable_web_page_preview=True,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("✨ sᴜʙsᴄʀɪʙᴇ  ᴍʏ ᴄʜᴀɴɴᴇʟ  ✨", url=link")] ])                
                     await msg.delete()
