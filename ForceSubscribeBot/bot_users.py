@@ -3,7 +3,7 @@ from ForceSubscribeBot.database.chats_sql import num_chats
 from ForceSubscribeBot.database import SESSION
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from config import OWNER_ID
+from Config import OWNER_ID
 
 @Client.on_message( ~filters.service, group=1)
 async def users_sql(_, msg: Message):
