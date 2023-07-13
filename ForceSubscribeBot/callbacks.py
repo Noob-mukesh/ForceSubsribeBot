@@ -25,28 +25,18 @@ async def _callbacks(bot, callback_query):
     query = callback_query.data.lower()
     if query.startswith("home"):
         if query == 'home':
-            chat_id = callback_query.from_user.id
-            message_id = callback_query.message.message_id
             await query.message.edit_text(text=Data.START.format(callback_query.from_user.mention, mention),
                 reply_markup=InlineKeyboardMarkup(Data.buttons)
             )
     elif query == "about":
-        chat_id = callback_query.message.chat.id
-        message_id = callback_query.message.message_id
-        await bot.edit_message_text(
-            chat_id=chat_id,
-            message_id=message_id,
+        await query.message.edit_text(
+            
             text=Data.ABOUT,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(Data.home_buttons)
         )
-
     elif query == "help":
-        chat_id = callback_query.message.chat.id
-        message_id = callback_query.message.message_id
-        await bot.edit_message_text(
-            chat_id=chat_id,
-            message_id=message_id,
+        await query.message.edit_text(
             text="**ʜᴇʀᴇ's ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ? **\n" + Data.HELP,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(Data.home_buttons),
