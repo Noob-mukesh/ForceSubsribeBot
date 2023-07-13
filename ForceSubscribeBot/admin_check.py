@@ -16,7 +16,7 @@ async def admin_check(client, message, user_id=None, callback_query=None):
         else:
             await message.reply_text(text)
         return False
-    if chat_member.status not in (enums.ChatMemberStatus.CREATOR, enums.ChatMemberStatus.ADMINISTRATOR):
+    if chat_member.status not in (enums.ChatMemberStatus.OWNER, enums.ChatMemberStatus.ADMINISTRATOR):
         text = "This command is only for admins!"
         if callback_query:
             await callback_query.answer(text, show_alert=True)
