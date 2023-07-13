@@ -33,18 +33,19 @@ async def main(bot: Client, msg: Message):
             try:
                 action = await get_action(chat_id)
                 if action == 'kick':
+                    await msg.delete()
                     await bot.ban_chat_member(chat_id, user_id)
                     await bot.unban_chat_member(chat_id, user_id)
-                    await msg.reply("ᴋɪᴄᴋᴇᴅ ᴍᴇᴍʙᴇʀ ʙᴇᴄᴀᴜsᴇ  ɴᴏᴛ  ᴊᴏɪɴᴇᴅ ғᴏʀᴄᴇ sᴜʙsʀɪʙᴇ ᴄʜᴀᴛ")
-                    
+                    await msg.reply("ᴋɪᴄᴋᴇᴅ ᴍᴇᴍʙᴇʀ ʙᴇᴄᴀᴜsᴇ  ɴᴏᴛ  ᴊᴏɪɴᴇᴅ ғᴏʀᴄᴇ sᴜʙsʀɪʙᴇ ᴄʜᴀᴛ")  
                     return
                 elif action == 'ban':
+                    await msg.delete()
                     await bot.ban_chat_member(chat_id, user_id, datetime.now() + timedelta(days=1))
                     await msg.reply("ʙᴀɴɴᴇᴅ ᴍᴇᴍʙᴇʀ ʙᴇᴄᴀᴜsᴇ  ɴᴏᴛ  ᴊᴏɪɴᴇᴅ ғᴏʀᴄᴇ sᴜʙsʀɪʙᴇ ᴄʜᴀᴛ")
-                    
                     return
                 buttons = [[InlineKeyboardButton("✨ sᴜʙsᴄʀɪʙᴇ  ᴍʏ ᴄʜᴀɴɴᴇʟ  ✨", url=link)]]
                 if action == 'mute':
+                    await msg.delete()
                     await msg.chat.restrict_member(user_id, ChatPermissions(can_send_messages=False))
                     buttons.append([InlineKeyboardButton("ᴜɴᴍᴜᴛᴇ ᴍᴇ", callback_data=f"joined+{msg.from_user.id}")])
                 await msg.reply(
@@ -52,7 +53,6 @@ async def main(bot: Client, msg: Message):
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
-                
                 await msg.stop_propagation()
             except ChatWriteForbidden:
                 pass
