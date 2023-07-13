@@ -20,9 +20,9 @@ from ForceSubscribeBot.settings import action_markup
 @Client.on_callback_query()
 async def _callbacks(bot, query:CallbackQuery):
     user = await bot.get_me()
-    user_id = callback_query.from_user.id
+    user_id = query.from_user.id
     mention = user.mention
-    query = callback_query.data.lower()
+    query = query.data.lower()
     if query.startswith("home"):
         if query == 'home':
             await query.message.edit_text(text=Data.START.format(callback_query.from_user.mention, mention),
