@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardMarkup
 
 
 # Help Message
-@Client.on_message(filters.private & filters.incoming & filters.command("help"))
+@Client.on_message( filters.incoming & filters.command("help"))
 async def _help(bot, msg):
     await bot.send_message(
         msg.chat.id,
