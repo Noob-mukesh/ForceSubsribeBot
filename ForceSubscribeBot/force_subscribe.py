@@ -5,7 +5,7 @@ from pyrogram.errors import UsernameInvalid, PeerIdInvalid, UserNotParticipant
 from ForceSubscribeBot.database.chats_sql import get_force_chat, change_force_chat, get_only_owner
 from pyrogram.enums import ChatMemberStatus
 
-@Client.on_message(filters.text & filters.incoming & filters.command(["fsub", "forcesubscribe"]))
+@Client.on_message(filters.text & filters.command(["fsub", "forcesubscribe"]))
 async def fsub(bot, msg: Message):
     chat_id = msg.chat.id
     bot_id = (await bot.get_me()).id
