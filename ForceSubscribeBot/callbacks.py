@@ -16,8 +16,9 @@ from ForceSubscribeBot.settings import action_markup
 
 
 # Callbacks
+
 @Client.on_callback_query()
-async def _callbacks(bot: Client, callback_query: CallbackQuery):
+async def _callbacks(bot, callback_query):
     user = await bot.get_me()
     user_id = callback_query.from_user.id
     mention = user.mention
@@ -30,7 +31,7 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
                 chat_id=chat_id,
                 message_id=message_id,
                 text=Data.START.format(callback_query.from_user.mention, mention),
-                reply_markup=InlineKeyboardMarkup(Data.buttons),
+                reply_markup=InlineKeyboardMarkup(Data.buttons)
             )
     elif query == "about":
         chat_id = callback_query.from_user.id
@@ -40,8 +41,9 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
             message_id=message_id,
             text=Data.ABOUT,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(Data.home_buttons),
+            reply_markup=InlineKeyboardMarkup(Data.home_buttons)
         )
+
     elif query == "help":
         chat_id = callback_query.from_user.id
         message_id = callback_query.message.message_id
