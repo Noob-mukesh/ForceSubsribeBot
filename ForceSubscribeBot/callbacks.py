@@ -17,35 +17,36 @@ from ForceSubscribeBot.settings import action_markup
 
 # Callbacks
 
-@Client.on_callback_query()
+
 async def _callbacks(bot, query:CallbackQuery):
     user = await bot.get_me()
     user_id = query.from_user.id
     mention = user.mention
-    query = query.data.lower()
-    if query.startswith("home"):
-        if query == 'home':
+    query_data = query.data.lower()  # Use a different variable name for the string value
+    if query_data.startswith("home"):
+        if query_data == 'home':
             await query.message.edit_text(text=Data.START.format(callback_query.from_user.mention, mention),
                 reply_markup=InlineKeyboardMarkup(Data.buttons)
             )
-    elif query == "about":
+
+    elif query_data == "about":
         await query.message.edit_text(
             
             text=Data.ABOUT,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(Data.home_buttons)
         )
-    elif query == "help":
+    elif query_data == "help":
         await query.message.edit_text(
             text="**ʜᴇʀᴇ's ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ? **\n" + Data.HELP,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(Data.home_buttons),
         )
-    elif query.startswith("action"):
+    elif query_data.startswith("action"):
         success = await admin_check(bot, callback_query.message, user_id, callback_query)
         if not success:
             return
-        main = query.split("+")[1].lower()
+        main = query_data.split("+")[1].lower()
         chat_id = int(query.split("+")[2])
         only_owner = await get_only_owner(chat_id)
         creator = True if (await bot.get_chat_member(chat_id, callback_query.from_user.id)).status == "creator" else False
