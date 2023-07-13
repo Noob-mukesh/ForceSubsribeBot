@@ -1,5 +1,5 @@
 from pyrogram.types import InlineKeyboardButton
-import Config
+from Config import BOT_USERNAME
 
 class Data:
     # Start Message
