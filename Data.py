@@ -18,16 +18,15 @@ class Data:
 
     # Home Button
     home_buttons = [
-        [InlineKeyboardButton(text="🏠ʀᴇᴛᴜʀɴ ʜᴏᴍᴇ 🏠", callback_data="home")],
+        [InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="home")],
     ]
 
     # Rest Buttons
-    buttons = [ InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")]
-    ],
-    InlineKeyboardButton("ʜᴇʟᴘ", callback_data="help"),
+    buttons =[ [ InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+    [InlineKeyboardButton("ʜᴇʟᴘ", callback_data="help"),
     InlineKeyboardButton("ᴀʙᴏᴜᴛ ", callback_data="about")
     ]
-   
+             ]
    
 # Help Message
     HELP = """
