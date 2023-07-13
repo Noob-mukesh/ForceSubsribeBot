@@ -34,7 +34,7 @@ async def _callbacks(bot, callback_query):
                 reply_markup=InlineKeyboardMarkup(Data.buttons)
             )
     elif query == "about":
-        chat_id = callback_query.from_user.id
+        chat_id = callback_query.message.chat.id
         message_id = callback_query.message.message_id
         await bot.edit_message_text(
             chat_id=chat_id,
@@ -45,7 +45,7 @@ async def _callbacks(bot, callback_query):
         )
 
     elif query == "help":
-        chat_id = callback_query.from_user.id
+        chat_id = callback_query.message.chat.id
         message_id = callback_query.message.message_id
         await bot.edit_message_text(
             chat_id=chat_id,
