@@ -18,6 +18,7 @@ async def must_join_channel(bot: Client, msg: Message):
                 chat_info = await bot.get_chat(MUST_JOIN)
                 link = chat_info.invite_link
             try:
+                await msg.delete()
                 await msg.reply(
                     f"Hey @{msg.from_user.username} ʏᴏᴜ ᴍᴜsᴛ ᴊᴏɪɴ  [ᴛʜɪs ᴄʜᴀɴɴᴇʟ]({link}) ᴛᴏ ᴜsᴇ ᴍᴇ. Aғᴛᴇʀ ᴊᴏɪɴɢ ᴛʀʏ ᴀɢᴀɪɴ /start or /help!",
                     disable_web_page_preview=True,
