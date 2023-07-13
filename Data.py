@@ -1,5 +1,5 @@
 from pyrogram.types import InlineKeyboardButton
-
+import Config
 
 class Data:
     # Start Message
@@ -22,18 +22,13 @@ class Data:
     ]
 
     # Rest Buttons
-    buttons = [
-       [InlineKeyboardButton("👨‍💻", url="https://t.me/legend_coder"),
-        InlineKeyboardButton("🎪", callback_data="about"),
-        InlineKeyboardButton("🛡", url="https://t.me/mastermind_network_official"),
-        InlineKeyboardButton("🎉", url="https://t.me/mr_sukkun")],
-[
-    InlineKeyboardButton("⚡ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅ⚡", callback_data="help"),
-    InlineKeyboardButton("🎪sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="https://t.me/worldwide_friend_zone")
+    buttons = [ InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")]
     ],
-   
-   [ InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url="https://t.me/forcesubscribe12bot?startgroup=true")]
+    InlineKeyboardButton("ʜᴇʟᴘ", callback_data="help"),
+    InlineKeyboardButton("ᴀʙᴏᴜᴛ ", callback_data="about")
     ]
+   
+   
 # Help Message
     HELP = """
 𝟷) ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ᴀ ɢʀᴏᴜᴘ. 
