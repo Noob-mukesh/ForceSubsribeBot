@@ -1,5 +1,6 @@
 from pyrogram import Client, filters
 import Config
+from datetime import datetime, timedelta
 from ForceSubscribeBot.database.chats_sql import get_force_chat, get_action, get_ignore_service
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, ChatPermissions
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
@@ -32,12 +33,12 @@ async def main(bot: Client, msg: Message):
             try:
                 action = await get_action(chat_id)
                 if action == 'kick':
-                    await msg.chat.kick_member(user_id)
-                    await msg.chat.unban_member(user_id)
+                    await bot.ban_chat_member(chat_id, user_id)
+                    await bot.unban_chat_member(chat_id, user_id)
                     await msg.reply("ᴋɪᴄᴋᴇᴅ ᴍᴇᴍʙᴇʀ ʙᴇᴄᴀᴜsᴇ  ɴᴏᴛ  ᴊᴏɪɴᴇᴅ ғᴏʀᴄᴇ sᴜʙsʀɪʙᴇ ᴄʜᴀᴛ")
                     return
                 elif action == 'ban':
-                    await msg.chat.kick_member(user_id)
+                    await bot.ban_chat_member(chat_id, user_id, datetime.now() + timedelta(days=1))
                     await msg.reply("ʙᴀɴɴᴇᴅ ᴍᴇᴍʙᴇʀ ʙᴇᴄᴀᴜsᴇ  ɴᴏᴛ  ᴊᴏɪɴᴇᴅ ғᴏʀᴄᴇ sᴜʙsʀɪʙᴇ ᴄʜᴀᴛ")
                     return
                 buttons = [[InlineKeyboardButton("✨ sᴜʙsᴄʀɪʙᴇ  ᴍʏ ᴄʜᴀɴɴᴇʟ  ✨", url=link)]]
