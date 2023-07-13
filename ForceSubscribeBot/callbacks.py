@@ -1,5 +1,6 @@
 from Data import Data
 from pyrogram import Client
+from pyrogram.enums import ChatMemberStatus
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
 from pyrogram.errors.exceptions import UserNotParticipant
 from ForceSubscribeBot.database.chats_sql import (
@@ -59,7 +60,7 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
         main = query.split("+")[1].lower()
         chat_id = int(query.split("+")[2])
         only_owner = await get_only_owner(chat_id)
-        creator = True if (await bot.get_chat_member(chat_id, callback_query.from_user.id)).status == "creator" else False
+        creator = True if (await bot.get_chat_member(chat_id, callback_query.from_user.id)).status == ChatMemberStatus.OWNER else False
         if only_owner and not creator:
             await callback_query.answer("ᴏɴʟʏ ᴏᴡɴᴇʀ ᴄᴀɴ ᴄʜᴀɴɢᴇ ᴄʜᴀᴛ sᴇᴛᴛɪɴɢs ɪɴ ᴛʜɪs ᴄʜᴀᴛ ғ**.", show_alert=True)
             return
@@ -79,7 +80,7 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
             # else:
             #     pass
         elif main in ["true", "false"]:
-            creator = True if (await bot.get_chat_member(chat_id, callback_query.from_user.id)).status == "creator" else False
+            creator = True if (await bot.get_chat_member(chat_id, callback_query.from_user.id)).status == ChatMemberStatus.OWNER else False
             if not creator:
                 await callback_query.answer("ᴛʜɪs ɪs ᴀ sᴘᴇᴄɪᴀʟ sᴇᴛᴛɪɴɢs ᴀɴᴅ ᴏɴʟʏ ᴏᴡɴᴇʀ ᴄᴀɴ ᴄʜᴀɴɢᴇ ɪᴛ ʙᴀʙʏ.", show_alert=True)
                 return
@@ -117,11 +118,11 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
         bot_chat_member2 = await bot.get_chat_member(force_chat, bot_id)
         chat = await bot.get_chat(force_chat)
         mention = '@'+chat.username if chat.username else 'the chat'
-        if bot_chat_member.status != "administrator":
+        if bot_chat_member.status != ChatMemberStatus.ADMINISTRATOR:
             await callback_query.answer(" ɪ 'ᴠᴇ ʙᴇᴇɴ ᴅᴇᴍᴏᴛᴇᴅ ғʀᴏᴍ  ᴛʜɪs ᴄʜᴀᴛ. I ᴄᴀɴ'ᴛ ᴜɴᴍᴜᴛᴇ ʏᴏᴜ ɴᴏᴡ. Sᴏʀʀʏ ʙᴀʙʏ ʟᴇᴀᴠɪɴɢ ᴄʜᴀᴛ", show_alert=True)
             await bot.send_message(chat_id, "I've been demoted here. Of no use then!")
             return
-        if bot_chat_member2.status != "administrator":
+        if bot_chat_member2.status != ChatMemberStatus.ADMINISTRATOR:
             await callback_query.answer(" ɪ'ᴠᴇ ʙᴇᴇɴ ᴅᴇᴍᴏᴛᴇᴅ ғʀᴏᴍ ғᴏʀᴄᴇ sᴜʙsʀɪʙᴇ ᴄʜᴀᴛ.", show_alert=True)
             await bot.send_message(chat_id, "ɪ'ᴠᴇ ʙᴇᴇɴ ᴅᴇᴍᴏᴛᴇᴅ ғʀᴏᴍ ᴛʜᴇ sᴜʙsʀɪʙᴇ ᴄʜᴀᴛ. Oғ ɴᴏ ᴜsᴇ ᴄʜᴀᴛ. F** ʟᴇᴀᴠɪɴɢ ᴄʜᴀᴛ!")
             return
