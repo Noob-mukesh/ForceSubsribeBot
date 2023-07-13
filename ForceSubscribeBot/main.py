@@ -8,7 +8,6 @@ from pyrogram.enums import ChatMemberStatus
 from pyrogram.types import ChatPermissions
 @Client.on_message(filters.group, group=-1)
 async def main(bot: Client, msg: Message):
-    await msg.delete()
     if not msg.from_user:
         return
     user_id = msg.from_user.id
