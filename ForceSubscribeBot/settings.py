@@ -15,7 +15,7 @@ async def settings(bot: Client, msg):
         await msg.reply("Please add a force subscribe chat using /fsub to use me.")
         return
     only_owner = await get_only_owner(chat_id)
-    creator = True if (await bot.get_chat_member(chat_id, msg.from_user.id)).ChatMemberStatus ==OWNER  else False
+    creator = True if (await bot.get_chat_member(chat_id, msg.from_user.id)).status==ChatMemberStatus.OWNER  else False
     if only_owner and not creator:
         await msg.reply("Only the owner can change settings in this chat.")
         return
