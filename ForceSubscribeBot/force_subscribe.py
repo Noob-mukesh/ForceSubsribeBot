@@ -3,7 +3,7 @@ from pyrogram.types import Message
 from ForceSubscribeBot.admin_check import admin_check
 from pyrogram.errors import UsernameInvalid, PeerIdInvalid, UserNotParticipant
 from ForceSubscribeBot.database.chats_sql import get_force_chat, change_force_chat, get_only_owner
-
+from pyrogram.enums import ChatMemberStatus
 
 @Client.on_message(filters.text & filters.incoming & filters.command(["fsub", "forcesubscribe"]))
 async def fsub(bot, msg: Message):
@@ -21,7 +21,7 @@ async def fsub(bot, msg: Message):
         else:
             await msg.reply("ɴᴏ ғᴏʀᴄᴇ sᴜʙsʀɪʙᴇ ᴄʜᴀᴛ sᴇᴛ•! \n\nᴄᴏᴜʟᴅ ʙᴇ sᴇᴛ ᴜsɪɴɢ `/forcesubscribe chat_id`")
     else:
-        creator = True if (await bot.get_chat_member(chat_id, msg.from_user.id)).status == "creator" else False
+        creator = True if (await bot.get_chat_member(chat_id, msg.from_user.id)).status ==ChatMemberStatus.OWNER else False
         only_owner = await get_only_owner(chat_id)
         if only_owner and not creator:
             await msg.reply("ᴏɴʟʏ ᴏᴡɴᴇʀ ᴄᴀɴ ᴄʜᴀɴɢᴇ ғᴏʀᴄᴇ sᴜʙsʀɪʙᴇ ᴄʜᴀᴛ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ ʙᴀʙʏ.")
@@ -46,7 +46,7 @@ async def fsub(bot, msg: Message):
         except UserNotParticipant:
             await msg.reply(f"ɪ ʜᴀᴠᴇɴ'ᴛ ʙᴇᴇɴ ᴀᴅᴅᴇᴅ ᴛʜᴇʀᴇ.")
             return
-        if bot_chat_member.status == "administrator":
+        if bot_chat_member.status ==ChatMemberStatus.ADMINISTRATOR:
             to_be_chat_id = (await bot.get_chat(to_be_chat)).id
             await change_force_chat(chat_id, to_be_chat_id)
             await msg.reply("sᴜᴄᴇssғᴜʟ. Nᴏᴡ ɪ'ʟʟ ᴍᴜᴛᴇ ᴘᴇᴏᴘʟᴇ ᴡʜᴏ ʜᴀᴠᴇɴ'ᴛ ᴊᴏɪɴᴇᴅ ᴛʜᴀᴛ ᴄʜᴀᴛ ʙᴀʙʏ . \n\nᴜsᴇ  /settings ᴛᴏ ᴄʜᴀɴɢᴇ sᴇᴛᴛɪɴɢs.")
