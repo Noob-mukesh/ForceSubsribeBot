@@ -31,12 +31,9 @@ async def settings(bot: Client, msg):
 
 async def action_markup(chat_id):
     action = await get_action(chat_id)
-    warn = "Warn"
     mute = "Mute"
     kick = "Kick"
     ban = "Ban"
-    if action == "warn":
-        warn += " ✅"
     elif action == "mute":
         mute += " ✅"
     elif action == "kick":
@@ -60,7 +57,6 @@ async def action_markup(chat_id):
         data2 = "False"
     buttons = [
         [
-            InlineKeyboardButton(warn, callback_data=f"action+warn+{chat_id}"),
             InlineKeyboardButton(mute, callback_data=f"action+mute+{chat_id}"),
             InlineKeyboardButton(kick, callback_data=f"action+kick+{chat_id}"),
             InlineKeyboardButton(ban, callback_data=f"action+ban+{chat_id}")
