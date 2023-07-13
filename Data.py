@@ -31,8 +31,7 @@ class Data:
     InlineKeyboardButton("⚡ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅ⚡", callback_data="help"),
     InlineKeyboardButton("🎪sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="https://t.me/worldwide_friend_zone")
     ],
-    [
-    InlineKeyboardButton("➕ᴀᴅᴅ ɢʀᴏᴜᴘ ᴄᴏɴᴛʀᴏʟʟᴇʀ ʙᴏᴛ➕",url="https://t.me/groupcontrollertgbot?startgroup=true")],
+   
    [ InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url="https://t.me/forcesubscribe12bot?startgroup=true")]
     ]
 # Help Message
