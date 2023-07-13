@@ -23,7 +23,7 @@ class Data:
 
     # Rest Buttons
     buttons = [
-       [InlineKeyboardButton("👨‍💻", url="https://t.me/itz_legend_coder"),
+       [InlineKeyboardButton("👨‍💻", url="https://t.me/legend_coder"),
         InlineKeyboardButton("🎪", callback_data="about"),
         InlineKeyboardButton("🛡", url="https://t.me/mastermind_network_official"),
         InlineKeyboardButton("🎉", url="https://t.me/mr_sukkun")],
@@ -66,7 +66,7 @@ class Data:
 
 ʟᴀɴɢᴜᴀɢᴇ : [ᴘʏᴛʜᴏɴ](www.python.org)
 
-ᴅᴇᴠᴇʟᴏᴘᴇʀ :  @itz_legend_coder
+ᴅᴇᴠᴇʟᴏᴘᴇʀ :  @legend_coder
 
 ᴜᴘᴅᴀᴛᴇ   : @Mr_sukkun
 
