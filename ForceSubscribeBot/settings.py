@@ -1,3 +1,4 @@
+
 from pyrogram import Client, filters
 from ForceSubscribeBot.admin_check import admin_check
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
@@ -11,19 +12,19 @@ async def settings(bot: Client, msg):
         return
     chat_id = msg.chat.id
     if not await chat_exists(msg.chat.id):
-        await msg.reply("ᴘʟᴇᴀsᴇ ᴀᴅᴅ ᴀ ғᴏʀᴄᴇ sᴜʙsᴄʀɪʙᴇ ᴄʜᴀᴛ  ᴜsɪɴɢ /fsub  ᴛᴏ ᴜsᴇ ᴍᴇ.")
+        await msg.reply("Please add a force subscribe chat using /fsub to use me.")
         return
     only_owner = await get_only_owner(chat_id)
-    creator =True if (await bot.get_chat_member(chat_id, msg.from_user.id)).status == "creator" else False
+    creator = True if (await bot.get_chat_member(chat_id, msg.from_user.id)).status == "creator" else False
     if only_owner and not creator:
-        await msg.reply("ᴏɴʟʏ  ᴏᴡɴᴇʀ ᴄᴀɴ  ᴄʜᴀɴɢᴇ sᴇᴛᴛɪɴɢs ɪɴ ᴛʜɪs ᴄʜᴀᴛ")
+        await msg.reply("Only the owner can change settings in this chat.")
         return
     buttons = await action_markup(chat_id)
     await msg.reply(
-        "**sᴇᴛᴛɪɴɢs** \n\n"
-        "1) ᴄʜᴏᴏsᴇ ᴀᴄᴛɪᴏɴ ᴛʏᴘᴇ ғᴏʀ ᴛʜᴏsᴇ  ᴡʜᴏ ʜᴀᴠᴇɴᴛ ᴊᴏɪɴᴇᴅ ғᴏʀᴄᴇ sᴜʙsᴄʀɪʙᴇ ᴄʜᴀᴛ. Dᴇғᴀᴜʟᴛs ᴛᴏ ᴍᴜᴛᴇ .\n"
-        "2) ᴄʜᴏᴏsᴇ  ᴛᴏ ɪɢɴᴏʀᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇssᴀғᴇs ᴏʀ ɴᴏᴛ. Iғ ʏᴏᴜ ᴅᴏɴᴛ ᴡᴀɴᴛ  ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴛᴀᴋᴇ ᴀᴄᴛɪᴏɴ ᴏɴ ᴜsᴇʀs ᴊᴜsᴛ ᴡʜᴇɴ ᴛʜᴇ ᴄʜᴀᴛ (didn't chat) ᴄʜᴏᴏsᴇ ᴏɴ ᴇʟsᴇ  , ᴏғғ ᴀɴᴛɪsᴘᴀᴍ ʏ, \n"
-        "3)  ᴄʜᴏᴏsᴇ ᴛᴏ ᴀʟʟᴏᴡ ᴀᴅᴍɪɴs ᴛᴏ ᴄʜᴀɴɢᴇ ғsᴜʙ ᴀɴᴅ sᴇᴛᴛɪɴɢs ᴏʀ ɴᴏᴛ.ᴅᴇғᴀᴜʟᴛ ᴛᴏ 'ᴀʟʟᴏᴡ ᴏɴʟʏ'.",
+        "Settings:\n\n"
+        "1) Choose action type for those who haven't joined the force subscribe chat. Defaults to mute.\n"
+        "2) Choose to ignore welcome messages or not. If you don't want the bot to take action on users just when the chat (didn't chat) chooses on else, off antispam y.\n"
+        "3) Choose to allow admins to change fsub and settings or not. Defaults to 'allow only'.",
         reply_markup=InlineKeyboardMarkup(buttons)
     )
 
@@ -43,7 +44,7 @@ async def action_markup(chat_id):
     else:
         ban += " ✅"
     ignore_service = await get_ignore_service(chat_id)
-    ignore_service_text = "Ignore Welcome Message : "
+    ignore_service_text = "Ignore Welcome Message: "
     if ignore_service:
         ignore_service_text += "On"
         data = "on"
