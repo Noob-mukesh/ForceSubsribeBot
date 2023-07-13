@@ -53,7 +53,7 @@ async def main(bot: Client, msg: Message):
                     await msg.delete()
                     return
                 buttons = [[InlineKeyboardButton("✨ sᴜʙsᴄʀɪʙᴇ  ᴍʏ ᴄʜᴀɴɴᴇʟ  ✨", url=link)]]
-                elif action == 'mute': 
+                if action == 'mute': 
                     await msg.chat.restrict_member(user_id, ChatPermissions(can_send_messages=False))
                     buttons.append([InlineKeyboardButton("ᴜɴᴍᴜᴛᴇ ᴍᴇ", callback_data=f"joined+{msg.from_user.id}")])
                 await msg.reply(
