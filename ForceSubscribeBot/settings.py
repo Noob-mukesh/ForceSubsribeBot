@@ -5,7 +5,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from ForceSubscribeBot.database.chats_sql import get_action, get_ignore_service, get_only_owner, chat_exists
 
 
-@Client.on_message(filters.text & filters.incoming & filters.command("settings"))
+@Client.on_message(filters.text  & filters.command("settings"))
 async def settings(bot: Client, msg):
     success = await admin_check(bot, msg)
     if not success:
