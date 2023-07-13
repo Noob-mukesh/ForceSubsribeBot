@@ -3,8 +3,8 @@ import Config
 from ForceSubscribeBot.database.chats_sql import get_force_chat, get_action, get_ignore_service
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, ChatPermissions
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
-
-
+from pyrogram.enums import ChatMemberStatus
+from pyrogram.types import ChatPermissions
 @Client.on_message(filters.group, group=-1)
 async def main(bot: Client, msg: Message):
     if not msg.from_user:
@@ -24,7 +24,7 @@ async def main(bot: Client, msg: Message):
             await bot.get_chat_member(force_chat, user_id)
         except UserNotParticipant:
             chat_member = await msg.chat.get_member(user_id)
-            if chat_member.status in ("creator", "administrator"):
+            if chat_member.status in (ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.OWNER):
                 return
             chat = await bot.get_chat(force_chat)
             mention = '@' + chat.username if chat.username else f"[{chat.title}]({chat.invite_link})"
