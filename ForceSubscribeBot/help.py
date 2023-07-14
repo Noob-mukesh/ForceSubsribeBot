@@ -8,6 +8,6 @@ from Config import START_IMG
 async def _help(bot, msg):
     await msg.reply_photo(
         START_IMG,
-        "**ʜᴇʀᴇ's ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ?**\n" + Data.HELP,
+        caption="**ʜᴇʀᴇ's ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ?**\n" + Data.HELP,
         reply_markup=InlineKeyboardMarkup(Data.home_buttons)
     )
