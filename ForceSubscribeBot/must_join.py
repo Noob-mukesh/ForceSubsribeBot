@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
-from Config import MUST_JOIN
+from Config import MUST_JOIN,START_IMG
 
 
 @Client.on_message( filters.incoming & filters.private, group=-1)
@@ -19,9 +19,9 @@ async def must_join_channel(bot: Client, msg: Message):
                 link = chat_info.invite_link
             try:
                 await msg.delete()
-                await msg.reply(
+                await msg.reply_photo(START_IMG,
                     f"Hey @{msg.from_user.username} ʏᴏᴜ ᴍᴜsᴛ ᴊᴏɪɴ  [ᴛʜɪs ᴄʜᴀɴɴᴇʟ]({link}) ᴛᴏ ᴜsᴇ ᴍᴇ. Aғᴛᴇʀ ᴊᴏɪɴɢ ᴛʀʏ ᴀɢᴀɪɴ /start or /help!",
-                    disable_web_page_preview=True,
+                
                     reply_markup=InlineKeyboardMarkup([
                         [InlineKeyboardButton("✨ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ✨", url=link)]
                     ])
