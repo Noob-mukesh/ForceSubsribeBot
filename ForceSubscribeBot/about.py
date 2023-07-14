@@ -5,8 +5,7 @@ from Config import BOT_USERNAME
 
 @Client.on_message(filters.command(["about",f"@{BOT_USERNAME}about"]))
 async def about(bot, msg):
-    await bot.send_message(
-        msg.chat.id,
+    await msg.reply(
         Data.ABOUT,
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(Data.home_buttons)
