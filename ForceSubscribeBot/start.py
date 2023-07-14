@@ -8,7 +8,7 @@ from pyrogram.types import InlineKeyboardMarkup
 async def start(bot, msg):
 	user = await bot.get_me()
 	mention = user.mention
-	await bot.send_message(
+	await.reply_photo bot.send_photo(
 		msg.chat.id,
 		Data.START.format(msg.from_user.mention, mention),
 		reply_markup=InlineKeyboardMarkup(Data.buttons)
