@@ -1,13 +1,12 @@
 # ғᴏʀᴄᴇ sᴜʙsʀɪʙᴇ ʙᴏᴛ
 
- [Fᴏʀᴄᴇ sᴜʙsʀɪʙᴇ Bᴏᴛ](https://t.me/forcesubtgbot)
+ [Fᴏʀᴄᴇ sᴜʙsʀɪʙᴇ Bᴏᴛ](https://t.me/ForceSubscriber_RoBot)
 > ɢɪvᴇ ᴀ sᴛᴀʀ ʙᴇғᴏʀᴇ ᴋᴀᴍɢɪɴɢ  ғᴜᴍᴋᴇʀ
 
 <p align="center"><a href="https://www.github.com/Noob-Mukesh/ForceSubscribeBot"><img src="https://te.legra.ph/file/fe924e2746ad34b7dc76d.jpg" width="2000"></a></p>
 
  ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴛᴏ ғᴏʀᴄᴇ sᴜʙsʀɪʙᴇ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴜsᴇʀs ᴛᴏ sᴜʙsʀɪʙᴇ ᴄʜᴀɴɴᴇʟ ᴏʀ ᴄʜᴀᴛ ʙʙ
 
-[![ᴏᴘᴇɴ sᴏᴜʀᴄᴇ ʟᴏᴠᴇ sᴠɢ1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 ## ᴜsᴀɢᴇ
 
