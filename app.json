@@ -38,6 +38,11 @@
       "required": true,
       "value": ""
     },
+    "START_IMG": {
+      "description": "Fill Start Img url below",
+      "required": false,
+      "value": ""
+    },
     "MUST_JOIN": {
       "description": "Add username/id of a channel/group",
       "required": false,
