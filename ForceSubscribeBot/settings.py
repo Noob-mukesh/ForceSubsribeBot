@@ -21,7 +21,7 @@ async def settings(bot: Client, msg):
         return
     buttons = await action_markup(chat_id)
     await msg.reply_photo(START_IMG,
-        "Settings:\n\n"
+        caption="Settings:\n\n"
         "1) Choose action type for those who haven't joined the force subscribe chat. Defaults to mute.\n"
         "2) Choose to ignore welcome messages or not. If you don't want the bot to take action on users just when the chat (didn't chat) chooses on else, off antispam y.\n"
         "3) Choose to allow admins to change fsub and settings or not. Defaults to 'allow only'.",
