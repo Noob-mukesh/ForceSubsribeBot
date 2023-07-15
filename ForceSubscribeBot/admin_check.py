@@ -1,5 +1,11 @@
+import asyncio 
 
-from pyrogram import enums
+from pyrogram import Client , filters, enums
+
+
+# Create an instance of the Pyrogram client
+
+# Define the admin_check function
 async def admin_check(client, message, user_id=None, callback_query=None):
     if not user_id:
         user_id = message.from_user.id
@@ -24,3 +30,13 @@ async def admin_check(client, message, user_id=None, callback_query=None):
             await message.reply_text(text)
         return False
     return True
+
+# Define a command handler
+@Client.on_message(filters.command("test"))
+async def test_command(client, message):
+    # Call the admin_check function
+    is_admin = await admin_check(client, message)
+    if is_admin:
+        await message.reply_text("You are an admin!")
+
+
