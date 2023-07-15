@@ -40,8 +40,8 @@
     },
     "START_IMG": {
       "description": "Fill Start Img url below",
-      "required": false,
-      "value": ""
+      "required": true,
+      "value": "https://te.legra.ph/file/8bbedf9bf159b4da138fd.jpg"
     },
     "MUST_JOIN": {
       "description": "Add username/id of a channel/group",
