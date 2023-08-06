@@ -67,7 +67,3 @@
 
 ɢʀᴏᴜᴘ ᴄʜᴀᴛ :- [ᴛʜᴇ sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/the_support_chat)
 
-## :)
-
-[![ғᴏʀ ᴛʜᴇʙᴀᴅɢᴇ ᴍᴀᴅᴇ-ᴡɪᴛʜ ᴘʏᴛʜᴏɴ](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-
