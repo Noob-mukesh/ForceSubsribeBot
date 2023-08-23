@@ -31,6 +31,7 @@ async def settings(bot: Client, msg):
 
 async def action_markup(chat_id):
     action = await get_action(chat_id)
+    nothing="No action"
     warn = "Warn"
     mute = "Mute"
     kick = "Kick"
@@ -38,9 +39,11 @@ async def action_markup(chat_id):
     if action == "mute":
         mute += " ✅"
     elif action=="warn":
-        warn+="✅"
+        warn+=" ✅"
     elif action == "kick":
         kick += " ✅"
+    elif action=="No action":
+        nothing+=" ✅"
     else:
         ban += " ✅"
     ignore_service = await get_ignore_service(chat_id)
@@ -66,7 +69,10 @@ async def action_markup(chat_id):
             InlineKeyboardButton(ban, callback_data=f"action+ban+{chat_id}")
         ],
         [
-            InlineKeyboardButton(ignore_service_text, callback_data=f"action+{data}+{chat_id}")
+            InlineKeyboardButton(ignore_service_text, callback_data=f"action+{data}+{chat_id}"),
+            InlineKeyboardButton(nothing, callback_data=f"action+nothing+{chat_id}")
+        
+            
         ],
         [
             InlineKeyboardButton(only_owner, callback_data=f"action+{data2}+{chat_id}")
